@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.CenterToScreen();
-
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoomDialog));
             this.singlePlayerRadio = new System.Windows.Forms.RadioButton();
             this.multiplayerRadio = new System.Windows.Forms.RadioButton();
             this.snapmapRadio = new System.Windows.Forms.RadioButton();
@@ -99,6 +98,7 @@
             this.Controls.Add(this.snapmapRadio);
             this.Controls.Add(this.multiplayerRadio);
             this.Controls.Add(this.singlePlayerRadio);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DoomDialog";
             this.Text = "Doom Launcher";
             this.ResumeLayout(false);

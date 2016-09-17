@@ -15,6 +15,7 @@ namespace DoomDialog
         public DoomDialog(String path)
         {
             InitializeComponent();
+            this.CenterToScreen();
             this.path = path;
         }
 
