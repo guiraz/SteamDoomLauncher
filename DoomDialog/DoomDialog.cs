@@ -20,7 +20,7 @@ namespace DoomDialog
 
         private void okButton_Click(object sender, EventArgs e)
         {
-            String args = "/C \"" + this.path + "\" -applaunch 379720 +com_gameMode ";
+            String args = "/C \"" + this.path + "\" -applaunch " + DOOM_APP_ID + " +com_gameMode ";
             args += (singlePlayerRadio.Checked ? "1" : multiplayerRadio.Checked ? "2" : "3");
 
             Console.WriteLine("cmd.exe " + args);
@@ -42,5 +42,6 @@ namespace DoomDialog
         }
 
         private String path;
+        private const long DOOM_APP_ID = 379720;
     }
 }
